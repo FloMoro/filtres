@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Hello, world!</title>
+		<script src="capture.js"></script>
+		<script src="filter.js"></script>
+		<link rel="stylesheet" href="main.css" type="text/css" media="all">
+    </head>
+    <body>
+		<div class="button">
+			<div class="takephoto">
+				<p>snapshot from webcam by WebRTC <a href="https://developer.mozilla.org/en-US/docs/Web/API/WebRTC_API/Taking_still_photos">source</a></p>
+				<video id="video">Video stream not available.</video>
+				<button id="startbutton">Prendre une photo</button> 
+			</div>
+	
+			<div class="BW">
+				<button id="BWbutton">Mettre en noir et blanc</button> 
+				<button id="Greybutton">Mettre en niveau de gris</button> 
+			</div>
+			<div class="ajustement">
+				<button id="noisebutton">Ajouter du bruit</button>
+				<button id="lumiplusbutton">Ajouter de la luminosité</button>
+				<button id="lumimoinsbutton">Enlever de la luminosite</button>
+				<button id="floubutton">Mettre un léger flou</button>
+				<button id="flou2button">Mettre un flou appuyé</button>
+				<button id="floupbutton">Mettre un flou pondéré</button>
+				<button id="passobutton">Mettre un filtre passe bas moyen</button>
+				<button id="medbutton">median</button>
+
+
+
+
+
+			</div>
+
+			<div class="colored">
+				<div class="invertion">
+					<button id="invertbutton">Inverser les couleurs</button> 
+				</div>
+				<div class="demi">
+					<button id="halfWbutton">Mettre la moitié supérieure en blanc</button>
+					<button id="moitrbutton">Mettre la moitié gauche en magenta</button> 
+				</div>
+			</div>
+
+				<!--<button id="halfW2button">halfW2 photo</button>
+				
+				<button id="redfilterbutton">rfilter photo</button> 
+				<button id="greenfilterbutton">gfilter photo</button> 
+				<button id="bluefilterbutton">bfilter photo</button> 
+				<button id="magentafilterbutton">mfilter photo</button> 
+				<button id="yellowfilterbutton">yfilter photo</button> 
+				<button id="cyanfilterbutton">cfilter photo</button> 
+				-->
+
+			<div class="buttoncolor">
+				<div class="teinte">
+					<button id="redbutton">Ajouter une teinte rouge</button> 
+					<button id="greenbutton">Ajouter une teinte verte</button> 
+					<button id="bluebutton">Ajouter une teinte bleue</button> 
+					<button id="magentabutton">Ajouter une teinte magenta</button> 
+					<button id="yellowbutton">Ajouter une teinte jaune</button> 
+					<button id="cyanbutton">Ajouter une teinte cyan</button>
+				</div>
+				<div class="coloredgris">
+					<div class="cgclair">
+						<button id="rebutton">Mettre en rouge et gris clair</button> 
+						<button id="grebutton">Mettre en vert et gris clair</button> 
+						<button id="blbutton">Mettre en bleu et gris clair</button> 
+						<button id="magbutton">Mettre en magenta et gris clair</button> 
+						<button id="yelbutton">Mettre en jaune et gris clair</button> 
+						<button id="cybutton">Mettre en cyan et gris clair</button>
+					</div>
+					<dic class="cgfonce">
+						<button id="renbutton">Mettre en rouge et gris foncé</button> 
+						<button id="grenbutton">Mettre en vert et gris foncé</button> 
+						<button id="blnbutton">Mettre en bleu et gris foncé</button> 
+						<button id="magnbutton">Mettre en magenta et gris foncé</button> 
+						<button id="yelnbutton">Mettre en jaune et gris foncé</button> 
+						<button id="cynbutton">Mettre en cyan et gris foncé</button>
+					</dic>
+				</div>
+			</div>
+		</div>
+
+		<div class="apercu">
+			<canvas id="mycanvas"></canvas>
+			<img id="photo" alt="The screen capture will appear in this box."> 
+		</div>
+	</body>
+</html>
